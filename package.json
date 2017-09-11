@@ -2,7 +2,11 @@
   "name": "apitaunt",
   "version": "1.0.0",
   "description": "Create API JSON mocks for local development to mimic a remote API",
-  "main": "index.js",
+  "main": "./lib/apitaunt.js",
+  "bin": {
+    "apitaunt": "./bin/cli.js"
+  },
+  "preferGlobal": true,
   "scripts": {
     "test": "mocha test/**/**.js"
   },
@@ -23,11 +27,18 @@
     "url": "https://github.com/captcodemonkey/apitaunt/issues"
   },
   "homepage": "https://github.com/captcodemonkey/apitaunt#readme",
-  "devDependencies": {
+  "dependencies": {
     "chai": "^4.1.0",
     "chai-http": "^1.0.0",
     "minimist": "^1.2.0",
     "mocha": "^3.4.2",
     "node-static": "~0.7.4"
+  },
+  "devDependencies": {
+    "request": "latest",
+    "vows": "latest"
+  },
+  "engines": {
+    "node": ">= 0.8"
   }
 }
