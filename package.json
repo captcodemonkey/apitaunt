@@ -1,6 +1,6 @@
 {
   "name": "apitaunt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create API JSON mocks for local development to mimic a remote API",
   "main": "./lib/apitaunt.js",
   "bin": {
